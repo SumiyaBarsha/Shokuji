@@ -10,7 +10,7 @@ A full-stack food ordering app built with React (Vite) and Node.js/Express/Mongo
 
    - Admin Dashboard: Manage food items and orders (optional)
 
-## Tech Stack: React, Node.js, Express, MongoDB, JWT, Axios, Redux (optional)
+## Tech Stack: React, Node.js, Express, MongoDB, JWT, Axios
 
 ## Key Achievements:
 
