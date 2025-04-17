@@ -1,4 +1,4 @@
-#Shokuji - Food Ordering Platform
+# Shokuji - Food Ordering Platform
 
 A full-stack food ordering app built with React (Vite) and Node.js/Express/MongoDB. Features include:
 
@@ -10,9 +10,9 @@ A full-stack food ordering app built with React (Vite) and Node.js/Express/Mongo
 
    - Admin Dashboard: Manage food items and orders (optional)
 
-##Tech Stack: React, Node.js, Express, MongoDB, JWT, Axios, Redux (optional)
+## Tech Stack: React, Node.js, Express, MongoDB, JWT, Axios, Redux (optional)
 
-##Key Achievements:
+## Key Achievements:
 
    - Implemented persistent cart using localStorage + backend sync
 
