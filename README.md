@@ -1,6 +1,6 @@
 # Shokuji - Food Ordering Platform
 
-## Live Demo : [Click here](https://sumiyabarsha.github.io/)
+## Live Demo : [Click here](https://sumiyabarsha.github.io/Shokuji)
 
 A full-stack food ordering app built with React (Vite) and Node.js/Express/MongoDB. Features include:
 
