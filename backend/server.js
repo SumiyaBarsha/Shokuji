@@ -33,9 +33,9 @@ app.get('/', (req,res)=> {
     res.send("API working")
 })
 
-app.listen(port, ()=> {
-   console.log(`server running on http://localhost:${port}`);
-    });
+//app.listen(port, ()=> {
+//   console.log(`server running on http://localhost:${port}`);
+//   });
 
 
 if (process.env.NODE_ENV !== 'production') {
@@ -45,3 +45,4 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 export default app;
+
