@@ -11,7 +11,6 @@ import orderRouter from './routes/orderRoute.js';
 //app config
 const app = express();
 const port = 4000;
-require('dotenv').config();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); // For parsing form data
@@ -34,10 +33,15 @@ app.get('/', (req,res)=> {
     res.send("API working")
 })
 
-// app.listen(port, ()=> {
-//     console.log(`server running on http://localhost:${port}`);
-//     });
+app.listen(port, ()=> {
+   console.log(`server running on http://localhost:${port}`);
+    });
 
-module.exports = (req,res) => {
-    app(req,res);
+
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(port, () => {
+    console.log(`server running on http://localhost:${port}`);
+  });
 }
+
+export default app;

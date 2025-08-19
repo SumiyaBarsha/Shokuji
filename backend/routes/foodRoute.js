@@ -5,7 +5,7 @@ import foodModel from '../models/foodModel.js';
 
 const foodRouter = express.Router();
 
-/*
+
 //Image storage Engine
 const storage = multer.diskStorage({
     destination : "uploads",
@@ -20,7 +20,8 @@ foodRouter.post('/add',upload.single('image'),addFood);
 foodRouter.get('/list',listFood);
 foodRouter.post('/remove',removeFood);
 
-*/
+
+/*
 foodRouter.get('/', async (req, res) => {
   try {
     const foods = await foodModel.find({});
@@ -29,6 +30,6 @@ foodRouter.get('/', async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
-
+*/
 
 export default foodRouter;
