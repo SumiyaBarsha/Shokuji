@@ -17,7 +17,13 @@ app.use(bodyParser.urlencoded({ extended: true })); // For parsing form data
 
 //middlewares
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://shokuji-frontend-yourid.vercel.app", // replace with your deployed frontend URL
+    "http://localhost:3000" // allow local for testing
+  ],
+  credentials: true,
+}));
 
 //db connection
 connectDB();
