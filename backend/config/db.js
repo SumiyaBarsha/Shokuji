@@ -1,5 +1,9 @@
 import mongoose from "mongoose";
+require("dotenv").config();
 
 export const connectDB = async ()=>{
-    await mongoose.connect('mongodb+srv://sumiyabarsha992:shokuji76@cluster0.w8yhlw9.mongodb.net/shokuji').then(()=>console.log('Connected to MongoDB'));
+    await mongoose.connect(process.env.MONGODB_URI,{
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+    }).then(()=>console.log('Connected to MongoDB'));
 }
