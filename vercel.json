@@ -19,16 +19,12 @@
       "dest": "/backend/server.js"
     },
     {
+      "src": "/images/(.*)",
+      "dest": "/backend/uploads/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/frontend/dist/index.html"
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/frontend/dist/index.html"
-    }
   ]
 }
-
-
