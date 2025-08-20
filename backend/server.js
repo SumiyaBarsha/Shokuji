@@ -17,10 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // For parsing form data
 
 //middlewares
 app.use(express.json());
-app.use(cors({
-  origin: ['http://localhost:5173', 'https://shokuji.vercel.app']
-  credentials: true,
-}));
+app.use(cors());
 
 //db connection
 connectDB();
@@ -39,6 +36,7 @@ app.get('/', (req,res)=> {
 app.listen(port, ()=> {
    console.log(`server running on http://localhost:${port}`);
    });
+
 
 
 
