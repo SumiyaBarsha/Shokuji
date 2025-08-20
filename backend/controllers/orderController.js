@@ -8,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 //placing user order from frontend
 const placeOrder = async (req, res) => {
 
-    const frontend_url = "https://shokuji-backend.onrender.com"
+    const frontend_url = "https://shokuji.onrender.com"
     try{
         const newOrder = new orderModel({
             userId : req.body.userId,
@@ -112,3 +112,4 @@ const updateStatus = async (req, res) => {
 
 
 export { placeOrder, verifyOrder, userOrders, listOrders, updateStatus };
+
