@@ -4,15 +4,15 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "server" : "nodemon server.js",
-    "start" : "node server.js"
-
+    "server": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "body-parser": "^2.2.0",
+    "bson": "^6.10.4",
     "cors": "^2.8.5",
     "dotenv": "^16.6.1",
     "express": "^5.1.0",
