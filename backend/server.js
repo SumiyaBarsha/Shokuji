@@ -34,15 +34,8 @@ app.get('/', (req,res)=> {
 })
 
 app.listen(port, ()=> {
-  console.log(`server running on http://localhost:${port}`);
-  });
+   console.log(`server running on http://localhost:${port}`);
+   });
 
 
-// if (process.env.NODE_ENV !== 'production') {
-//   app.listen(port, () => {
-//     console.log(`server running on http://localhost:${port}`);
-//   });
-// }
-
-//export default app;
 
