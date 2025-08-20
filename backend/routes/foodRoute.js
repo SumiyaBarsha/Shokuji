@@ -5,7 +5,6 @@ import foodModel from '../models/foodModel.js';
 
 const foodRouter = express.Router();
 
-
 //Image storage Engine
 const storage = multer.diskStorage({
     destination : "uploads",

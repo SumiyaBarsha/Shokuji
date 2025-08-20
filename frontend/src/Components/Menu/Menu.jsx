@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './Menu.css'
 import {menu_list} from '../../assets/assets'
 
