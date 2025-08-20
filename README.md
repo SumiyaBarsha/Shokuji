@@ -1,5 +1,7 @@
 # Shokuji - Food Ordering Platform
 
+##Live Demo [View Live Demo](https://shokuji.onrender.com)
+
 A full-stack food ordering app built with React (Vite) and Node.js/Express/MongoDB. Features include:
 
    - User Authentication: JWT-based login/signup
