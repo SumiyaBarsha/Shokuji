@@ -12,16 +12,7 @@ import path from 'path';
 //app config
 const app = express();
 const port = 4000;
-// Serve static files with proper MIME types
-app.use('/Shokuji', express.static(path.join(__dirname, 'dist'), {
-  setHeaders: (res, filePath) => {
-    if (filePath.endsWith('.css')) {
-      res.setHeader('Content-Type', 'text/css');
-    } else if (filePath.endsWith('.js')) {
-      res.setHeader('Content-Type', 'application/javascript');
-    }
-  }
-}));
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); // For parsing form data
@@ -47,6 +38,7 @@ app.get('/', (req,res)=> {
 app.listen(port, ()=> {
    console.log(`server running on http://localhost:${port}`);
    });
+
 
 
 
